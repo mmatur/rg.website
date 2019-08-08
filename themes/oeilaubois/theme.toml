@@ -1,0 +1,14 @@
+# theme.toml template for a Hugo theme
+
+name = "ML"
+license = "MIT"
+licenselink = "https://github.com/mmatur/rg.website/blob/master/LICENSE"
+homepage = "https://oeilaubois-ebeniste.com/"
+description = "L'oeil au bois - Romaric Gauthier - Ebéniste"
+tags = ["Ebéniste", "bois"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "mmatur"
+  homepage = "https://github.com/mmatur"

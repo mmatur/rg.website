@@ -1,0 +1,548 @@
+$theme-colors: (
+  // "dark": #83bd38,
+  "dark_section": #000000,
+  "light_section": #2c3030,
+  // "primary": #000000,
+  // "secondary": #0c229c,
+  // "info": #000000,
+  // "primary_in_dark_section": #dd2020,
+  // "primary_in_light_section": #c4179e
+);
+$enable-flex: true;
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+$screen-sm-max: 575.9px;
+$screen-md-min: 768px;
+$screen-md-max: 992px;
+$body-bg: #000000;
+$max-width: none;
+/* 1440px; */
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 5),
+  7: ($spacer * 7)
+);
+
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 0 !important;
+}
+
+.modal-open {
+  overflow: visible;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+section {
+  display: block;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  width: 100%;
+
+  p {
+    line-height: 2em;
+  }
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+.bg-dark_section {
+  h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  h3 {
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  p {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    line-height: 2em;
+  }
+  a {
+    color: #FFFFFF;
+  }
+}
+
+.bg-light_section {
+  h1 {
+    color: #bdc2c7;
+    font-size: 2rem;
+  }
+  h2 {
+    color: #bdc2c7;
+    font-size: 2rem;
+  }
+  p {
+    color: #bdc2c7;
+    font-size: 1.1em;
+    line-height: 2em;
+  }
+  a {
+    color: #bdc2c7;
+  }
+}
+
+/*
+ ------------------------------------------------------------------------------------------------------
+  The navbar
+ ------------------------------------------------------------------------------------------------------
+*/
+#logo {
+  height: 36px;
+}
+
+#rg-navbar {
+  box-shadow: none;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+}
+
+.navbar-brand {
+  font-size: 1em;
+}
+
+.shrinked-menu {
+  padding: 1px;
+  margin: 0;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+
+  .nav-link {
+    padding: 0.3em;
+  }
+}
+
+.rg-shrinked-menu {
+  background: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+nav a {
+  font-size: 0.9em;
+}
+
+.nav-link {
+  border-radius: 1em;
+}
+
+
+
+/*
+ ------------------------------------------------------------------------------------------------------
+  The body main aspect
+ ------------------------------------------------------------------------------------------------------
+  Everything has to be in rows so everything looks as intended
+ ------------------------------------------------------------------------------------------------------
+*/
+.rg-content {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+  background: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.moon-hood {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.social-network {
+  font-size: 3em;
+
+  .fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .fa-facebook {
+    color: #007bff;
+  }
+}
+
+
+/*
+ ------------------------------------------------------------------------------------------------------
+  Header
+ ------------------------------------------------------------------------------------------------------
+*/
+.rg-header {
+  height: 36em;
+  background-image: url("/img/tool-5.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // opacity: 0.75;
+  font-weight: bold;
+
+  @media(max-width: $screen-md-min) {
+    height: auto;
+    padding-bottom: 5em;
+  }
+
+  h1 {
+    font-size: 4rem;
+    @media(min-width: $screen-md-min) {
+      padding-top: 2em;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    @media(min-width: $screen-md-min) {
+      padding-top: 1em;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    @media(min-width: $screen-md-min) {
+      padding-top: 1em;
+    }
+  }
+
+  .row {
+    @media(max-width: 800px) {
+      padding-top: 6em;
+    }
+  }
+}
+
+.dark-box-md {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  padding: 2em;
+  border: 2px #000000 solid;
+  @media(min-width: $screen-md-min) {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.light-box-md {
+  background-color: rgba(100, 93, 93, 0.5);
+  border-radius: 24px;
+  padding: 2em;
+  border: 2px #000000 solid;
+  @media(min-width: $screen-md-min) {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+#map {
+  height: 20em;
+  width: 100%;
+}
+
+// Testimonial
+
+.testimonial {
+  padding-top: 0;
+}
+
+.testimonial-quote {
+  font-size: 16px;
+}
+
+.testimonial-quote blockquote {
+  /* Negate theme styles */
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  color: gray;
+  font-family: Georgia, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.4 !important;
+  margin: 0;
+  position: relative;
+  text-shadow: 0 1px white;
+  z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+  box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+  color: #75808a; 
+  line-height: 1.4 !important;
+}
+
+.testimonial-quote blockquote p:first-child:before {
+  content: '\201C';
+  color: #81bedb;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: .3;
+  position: absolute;
+  top: -.4em;
+  left: -.2em;    
+  text-shadow: none;
+  z-index: -300;
+}
+
+.testimonial-quote img {
+  border: 3px solid #9CC1D3;
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -.2em; 
+  left: 0;    
+}
+
+.testimonial-quote cite {
+  color: gray;
+  display: block;
+  font-size: .8em; 
+}
+
+.testimonial-quote cite span {
+  color: #5e5e5e;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px white; 
+}
+
+.testimonial-quote {
+  position: relative; 
+}
+
+.testimonial-quote .quote-container {
+  padding-left: 160px; 
+}
+
+.testimonial-quote.right .quote-container {
+  padding-left: 0;
+  padding-right: 160px; 
+}
+
+.testimonial-quote.right img {
+  left: auto;
+  right: 0;
+}
+
+.testimonial-quote.right cite {
+  text-align: right; 
+}
+
+
+// Gallery
+
+// Grid Layout Styles
+.gallery {
+  overflow: hidden;
+  margin: 10px;
+  max-width: 768px;
+}
+.gallery .box {
+  float: left;
+  position: relative;
+  /* Default: 1 tile wide */
+  width: 100%;
+  padding-bottom: 100%; 
+}
+@media only screen and (min-width : 365px) {
+  /* Tablet view: 2 tiles */
+  .gallery .box {
+      width: 50%;
+      padding-bottom: 50%;
+  }
+}
+@media only screen and (min-width : 480px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .gallery .box {
+      width: 33.3%;
+      padding-bottom: 33.3%; /*  */
+  }
+}
+@media only screen and (min-width : 9999px) {
+ /* Medium desktop: 4 tiles */
+ .box {
+    width: 25%;
+    padding-bottom: 25%;
+ }
+}
+
+/*
+Transition styles
+*/
+.gallery.hover-transition figure,
+.gallery.hover-effect-zoom .img, 
+.gallery:not(.caption-effect-appear) figcaption,
+.fancy-figure:not(.caption-effect-appear) figcaption {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/*
+figure styles
+*/
+figure {
+  position:relative; /* purely to allow absolution positioning of figcaption */
+  overflow: hidden;
+}
+.gallery figure {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+.gallery.hover-effect-grow figure:hover {
+  transform: scale(1.05);
+}
+.gallery.hover-effect-shrink figure:hover {
+  transform: scale(0.95);
+}
+.gallery.hover-effect-slidedown figure:hover {
+  transform: translateY(5px);
+}
+.gallery.hover-effect-slideup figure:hover {
+  transform: translateY(-5px);
+}
+
+/*
+img / a styles
+*/
+
+.gallery .img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.gallery.hover-effect-zoom figure:hover .img {
+  transform: scale(1.05);
+}
+.gallery img {
+  display: none; /* only show the img if not inside a gallery */
+}
+figure a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*
+figcaption styles
+*/
+.gallery figcaption,
+.fancy-figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-size: 75%; /* change this if you want bigger text */
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+.gallery.caption-position-none figcaption,
+.fancy-figure.caption-position-none figcaption  {
+  display: none;
+}
+.gallery.caption-position-center figcaption,
+.fancy-figure.caption-position-center figcaption {
+  top: 0;
+  padding: 40% 5px;
+}
+.gallery.caption-position-bottom figcaption,
+.fancy-figure.caption-position-bottom figcaption {
+  padding: 5px;
+}
+.gallery.caption-effect-fade figure:not(:hover) figcaption,
+.gallery.caption-effect-appear figure:not(:hover) figcaption,
+.fancy-figure.caption-effect-fade figure:not(:hover) figcaption,
+.fancy-figure.caption-effect-appear figure:not(:hover) figcaption {
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+}
+.gallery.caption-effect-slide.caption-position-bottom figure:not(:hover) figcaption,
+.fancy-figure.caption-effect-slide.caption-position-bottom figure:not(:hover) figcaption {
+  margin-bottom: -100%;
+}
+.gallery.caption-effect-slide.caption-position-center figure:not(:hover) figcaption,
+.fancy-figure.caption-effect-slide.caption-position-center figure:not(:hover) figcaption  {
+  top: 100%;
+}
+figcaption p {
+  margin: auto; /* override style in theme */
+}
+

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="container-fluid bg-dark_section">
+   <div class="row pt-5">
+      <div class="col-12 justify-content-center text-center">
+         <h1>{{ .Title }}</h1>
+      </div>
+   </div>
+</section>
+
+<section class="container-fluid bg-light">
+   <div class="row justify-content-center">
+      <div class="col-9">
+         {{ .Content }}
+      </div>
+      <div class="col-3">
+            <img class="moon-hood" title="{{ .Params.title }}" src="{{ .Params.image }}" />
+      </div>
+   </div>
+</section>
+
+<section class="container-fluid testimonial bg-light">
+   <div class="row justify-content-center testimonial-quote group">
+      <div class="col-12 quote-container">
+          <blockquote>
+              <p>”Il n'y a point de recette pour embellir la nature. Il ne s'agit que de voir.”</p>
+              <br>
+          </blockquote>  
+          <cite><span>Auguste Rodin</span>
+          </cite>
+      </div>
+  </div>    
+</section>
+{{ end }}

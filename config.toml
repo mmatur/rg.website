@@ -1,0 +1,20 @@
+baseURL = "https://oeilaubois-ebenisterie.com"
+languageCode = "fr-fr"
+title = "L’œil au bois"
+googleAnalytics = "UA-AZE-1"
+
+theme = ["oeilaubois"]
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[params.meta]
+  title = "L'oeil au bois - Romaric Gauthier - Ebéniste"
+  description = "L'oeil au bois - Romaric Gauthier - Ebéniste"
+  keywords = ["Ebéniste", "bois"]

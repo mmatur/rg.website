@@ -1,0 +1,14 @@
+{	
+  "name": "oeilaubois-website",	
+  "version": "1.0.0",	
+  "description": "Oeil au bois website",	
+  "main": "index.html",	
+  "scripts": {},	
+  "author": "Michael MATUR",	
+  "license": "Apache 2",	
+  "dependencies": {	
+    "bootstrap": "^4.3.1",	
+    "npm": "^6.11.2"	
+  },	
+  "devDependencies": {}	
+}
