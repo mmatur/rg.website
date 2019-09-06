@@ -109,6 +109,15 @@ section p:last-child {
   }
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.portrait {
+  width: 100%;
+  padding-top: 10em;
+}
+
 /*
  ------------------------------------------------------------------------------------------------------
   The navbar
@@ -226,11 +235,11 @@ nav a {
 */
 .rg-header {
   height: 36em;
-  background-image: url("/img/tool-5.png");
-  background-position: left top;
+  background-color: #2C3030;
+  background-image: url("/img/index-head.png");
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  // opacity: 0.75;
   font-weight: bold;
 
   @media(max-width: $screen-md-min) {
@@ -257,6 +266,90 @@ nav a {
     @media(min-width: $screen-md-min) {
       padding-top: 1em;
     }
+  }
+
+  .row {
+    @media(max-width: 800px) {
+      padding-top: 6em;
+    }
+  }
+}
+
+.rg-header-2 {
+  height: 36em;
+  background-color: #2C3030;
+  background-image: url("/img/romaric-atelier-2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+
+  @media(max-width: $screen-md-min) {
+    height: auto;
+    padding-bottom: 5em;
+  }
+
+  .row {
+    @media(max-width: 800px) {
+      padding-top: 6em;
+    }
+  }
+}
+
+.rg-bois-lune {
+  height: 36em;
+  background-color: #2C3030;
+  background-image: url("/img/romaric-atelier-3.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+
+  @media(max-width: $screen-md-min) {
+    height: auto;
+    padding-bottom: 5em;
+  }
+
+  .row {
+    @media(max-width: 800px) {
+      padding-top: 6em;
+    }
+  }
+}
+
+.rg-realisation {
+  height: 36em;
+  background-color: #2C3030;
+  background-image: url("/img/romaric-atelier-4.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+
+  @media(max-width: $screen-md-min) {
+    height: auto;
+    padding-bottom: 5em;
+  }
+
+  .row {
+    @media(max-width: 800px) {
+      padding-top: 6em;
+    }
+  }
+}
+
+.rg-contact {
+  height: 36em;
+  background-color: #2C3030;
+  background-image: url("/img/romaric-atelier-5.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+
+  @media(max-width: $screen-md-min) {
+    height: auto;
+    padding-bottom: 5em;
   }
 
   .row {

@@ -2,7 +2,7 @@
 title: Qu’est-ce que le « bois de lune ? 
 description: Qu’est-ce que le « bois de lune ?
 type: bois-de-lune
-image: /img/moon-hood-1.png
+image: /img/bois-lune.jpg
 menu:
   main: {}
 
