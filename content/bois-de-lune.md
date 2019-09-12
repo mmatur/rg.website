@@ -1,6 +1,6 @@
 ---
-title: Qu’est-ce que le « bois de lune ? 
-description: Qu’est-ce que le « bois de lune ?
+title: Qu’est-ce que le « bois de lune » ? 
+description: Qu’est-ce que le « bois de lune » ?
 type: bois-de-lune
 image: /img/bois-lune.jpg
 menu:
