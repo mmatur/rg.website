@@ -234,9 +234,9 @@ nav a {
  ------------------------------------------------------------------------------------------------------
 */
 .rg-header {
-  height: 36em;
+  height: 38em;
   background-color: #2C3030;
-  background-image: url("/img/index-head.png");
+  background-image: url("/img/index-head.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,6 +245,7 @@ nav a {
   @media(max-width: $screen-md-min) {
     height: auto;
     padding-bottom: 5em;
+    margin-top: 10%;
   }
 
   h1 {
