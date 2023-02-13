@@ -7,7 +7,14 @@ Certaines de ces réalisations et rénovations sont encore disponibles à l’at
 
 {{< load-photoswipe >}}
 {{< gallery >}}
-
+{{< figure link="/realisations/commode.jpg" thumb="-thumb" size="1024x1024" caption="commode" >}}
+{{< figure link="/realisations/armoire.jpg" thumb="-thumb" size="1024x1024" caption="armoire" >}}
+{{< figure link="/realisations/dressing.jpg" thumb="-thumb" size="1024x1024" caption="dressing" >}}
+{{< figure link="/realisations/miroir.jpg" thumb="-thumb" size="1024x1024" caption="miroir" >}}
+{{< figure link="/realisations/lampe.jpg" thumb="-thumb" size="1024x1024" caption="lampe" >}}
+{{< figure link="/realisations/meuble.jpg" thumb="-thumb" size="1024x1024" caption="meuble" >}}
+{{< figure link="/realisations/cuisine.jpg" thumb="-thumb" size="1024x1024" caption="cuisine" >}}
+{{< figure link="/realisations/bibliotheque.jpg" thumb="-thumb" size="1024x1024" caption="bibliotheque" >}}
 {{< figure link="/realisations/table-chene-massis.jpg" thumb="-thumb" size="1024x1024" caption="Table en chêne massif avec rallonges. Pieds en acier." >}}
 {{< figure link="/realisations/meuble-frene-valchromat.jpg" thumb="-thumb" size="1024x1024" caption="Meuble en frêne, valchromat noir et cannage." >}}
 {{< figure link="/realisations/meuble-salle-de-bain.jpg" thumb="-thumb" size="1024x1024" caption="Meuble de salle de bain en chêne et valchromat noir." >}}
