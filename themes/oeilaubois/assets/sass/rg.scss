@@ -127,6 +127,10 @@ section p:last-child {
   height: 36px;
 }
 
+#artisan-art {
+  height: 100px;
+}
+
 #rg-navbar {
   box-shadow: none;
   -webkit-transition: padding 0.2s linear;
@@ -300,7 +304,7 @@ nav a {
 .rg-bois-lune {
   height: 36em;
   background-color: #2C3030;
-  background-image: url("/img/romaric-atelier-3.jpg");
+  background-image: url("/img/atelier.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,7 +346,7 @@ nav a {
 .rg-contact {
   height: 36em;
   background-color: #2C3030;
-  background-image: url("/img/romaric-atelier-5.jpg");
+  background-image: url("/img/atelier-2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
